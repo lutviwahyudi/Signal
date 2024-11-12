@@ -91,13 +91,13 @@
                 <h3 class="column-title">Kirim Feedback Anda Tentang Layanan Kami</h3>
                 <!-- contact form works with formspree.io  -->
                 <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
-                <form id="contact-form" action="#" method="post" role="form">
+                <form id="contact-form" action="<?= base_url('contact/feedback')?>" method="post" role="form">
                     <div class="error-container"></div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label>Nama</label>
-                                <input class="form-control form-control-name" name="name" id="name" placeholder="" type="text" required>
+                                <input class="form-control form-control-name" name="nama" id="nama" placeholder="" type="text" required>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -110,7 +110,7 @@
                     </div>
                     <div class="form-group">
                         <label>Pesan</label>
-                        <textarea class="form-control form-control-message" name="message" id="message" placeholder="" rows="10"
+                        <textarea class="form-control form-control-message" name="deskripsi" id="deskripsi" placeholder="" rows="10"
                             required></textarea>
                     </div>
                     <div class="text-right"><br>

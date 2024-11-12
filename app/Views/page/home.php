@@ -1,7 +1,7 @@
 <?= $this->include('layout/header') ?>
 <?= $this->include('layout/navbar') ?>
 <div class="banner-carousel banner-carousel-1 mb-0">
-    <div class="banner-carousel-item" style="background-image:url(<?= base_url('assets') ?>/images/projects/cr1.jpg)">
+    <div class="banner-carousel-item" style="background-image:url(<?= base_url('assets') ?>/images/projects/p5a.jpg)">
         <div class="slider-content">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <div class="banner-carousel-item" style="background-image:url(<?= base_url('assets') ?>/images/projects/cr2.jpg)">
+    <div class="banner-carousel-item" style="background-image:url(<?= base_url('assets') ?>/images/projects/p9.jpg)">
         <div class="slider-content text-left">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="banner-carousel-item" style="background-image:url(<?= base_url('assets') ?>/images/projects/cr3.jpg)">
+    <div class="banner-carousel-item" style="background-image:url(<?= base_url('assets') ?>/images/projects/p10a.jpg)">
         <div class="slider-content text-right">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -125,9 +125,9 @@
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <h3 class="into-sub-title">Keunggulan</h3>
                 <div class="accordion accordion-group" id="our-values-accordion">
-                    <div class="card" style="width: 34rem;">
+                    <div class="card" style="width: 30rem;">
                         <video class="card-img-top" controls>
-                            <source src="<?= base_url('assets') ?>/images/projects/vidio1.mp4" type="video/mp4">
+                            <source src=" <?= base_url('assets') ?>/images/projects/vidio1.mp4" type="video/mp4">
                         </video>
                         <div class="card-body">
                             <h5 class="card-title">Company Profile Vidio</h5>
@@ -142,7 +142,6 @@
                                 </button>
                             </h2>
                         </div>
-
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#our-values-accordion">
                             <div class="card-body">
                                 Menjadi mitra terpercaya dalam memberikan solusi internet satelit yang cepat, handal, dan terjangkau untuk seluruh masyarakat Indonesia.
@@ -332,66 +331,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h3 class="column-title">Testimonials</h3>
-
+                <h3 class="column-title">Feedback Teman-Teman</h3>
                 <div id="testimonial-slide" class="testimonial-slide">
-                    <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last
-                                view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the
-                                subline of her own road.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="<?= base_url('assets') ?>/images/clients/testimonial1.png" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Gabriel Denis</h3>
-                                    <span class="quote-subtext">Chairman, OKT</span>
+                    <?php foreach ($feedback as $fdc) : ?>
+                        <div class="item">
+                            <div class="quote-item">
+                                <span class="quote-text">
+                                    <?= $fdc['deskripsi'] ?>
+                                </span>
+                                <div class="quote-item-footer">
+                                    <img loading="lazy" class="testimonial-thumb" src="<?= base_url('assets') ?>/images/clients/testimonial1.png" alt="testimonial">
+                                    <div class="quote-item-info">
+                                        <h3 class="quote-author"><?= $fdc['nama'] ?></h3>
+                                        <span class="quote-subtext"><?= $fdc['email'] ?></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div>
+                            </div><!-- Quote item end -->
+                        </div>
+                    <?php endforeach; ?>
                     <!--/ Item 1 end -->
-
-                    <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris
-                                nisi aliquip consequat.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="<?= base_url('assets') ?>/images/clients/testimonial2.png" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Weldon Cash</h3>
-                                    <span class="quote-subtext">CFO, First Choice</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div>
-                    <!--/ Item 2 end -->
-
-                    <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa tion ullamco laboris
-                                nisi ut commodo consequat.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="<?= base_url('assets') ?>/images/clients/testimonial3.png" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Minter Puchan</h3>
-                                    <span class="quote-subtext">Director, AKT</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div>
-                    <!--/ Item 3 end -->
-
                 </div>
                 <!--/ Testimonial carousel end-->
             </div><!-- Col end -->
@@ -403,7 +361,7 @@
                 <div class="row all-clients">
                     <div class="col-sm-4 col-6">
                         <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="<?= base_url('assets') ?>/images/clients/client1.png" alt="clients-logo" /></a>
+                            <a href="https://taka.co.id/takaindo/index.php?option=com_content&view=article&id=73&Itemid=487"><img loading="lazy" class="img-fluid" src="<?= base_url('assets') ?>/images/clients/k1.jpeg" alt="clients-logo" /></a>
                         </figure>
                     </div><!-- Client 1 end -->
 
@@ -415,13 +373,13 @@
 
                     <div class="col-sm-4 col-6">
                         <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="<?= base_url('assets') ?>/images/clients/client3.png" alt="clients-logo" /></a>
+                            <a href="https://bignetinc.com/"><img loading="lazy" class="img-fluid" src="<?= base_url('assets') ?>/images/clients/k2.jpg" alt="clients-logo" /></a>
                         </figure>
                     </div><!-- Client 3 end -->
 
                     <div class="col-sm-4 col-6">
                         <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="<?= base_url('assets') ?>/images/clients/client4.png" alt="clients-logo" /></a>
+                            <a href="https://sbbkab.go.id/"><img loading="lazy" class="img-fluid" src="<?= base_url('assets') ?>/images/clients/k3.png" alt="clients-logo" /></a>
                         </figure>
                     </div><!-- Client 4 end -->
 
@@ -450,31 +408,12 @@
 <section class="subscribe no-padding">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <div class="subscribe-call-to-acton">
-                    <h3>Can We Help?</h3>
-                    <h4>(+9) 847-291-4353</h4>
+            <div class="col-lg-12">
+                <div class="subscribe-call-to-acton text-center">
+                    <h3>Ada Yang Bisa Kami Bantu?</h3>
+                    <h4>(+62) 821-2233-7673</h4>
                 </div>
             </div><!-- Col end -->
-
-            <div class="col-lg-8">
-                <div class="ts-newsletter row align-items-center">
-                    <div class="col-md-5 newsletter-introtext">
-                        <h4 class="text-white mb-0">Newsletter Sign-up</h4>
-                        <p class="text-white">Latest updates and news</p>
-                    </div>
-
-                    <div class="col-md-7 newsletter-form">
-                        <form action="#" method="post">
-                            <div class="form-group">
-                                <label for="newsletter-email" class="content-hidden">Newsletter Email</label>
-                                <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Your your email and hit enter" autocomplete="off">
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- Newsletter end -->
-            </div><!-- Col end -->
-
         </div><!-- Content row end -->
     </div>
     <!--/ Container end -->

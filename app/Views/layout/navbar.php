@@ -1,6 +1,6 @@
  <!-- Header start -->
  <header id="header" class="header-one">
-     <div class="bg-white">
+     <!-- <div class="bg-white">
          <div class="container">
              <div class="logo-area">
                  <div class="row align-items-center">
@@ -8,7 +8,7 @@
                          <a class="d-block" href="index.html">
                              <img loading="lazy" src="<?= base_url('assets') ?>/images/projects/logo2.png" alt="Constra" style="width:243px; height:114px">
                          </a>
-                     </div><!-- logo end -->
+                     </div>
 
                      <div class="col-lg-9 header-right">
                          <ul class="top-info-box">
@@ -31,13 +31,12 @@
                              <li class="header-get-a-quote">
                                  <a class="btn btn-primary" href="<?= base_url('contact') ?>">feedback anda</a>
                              </li>
-                         </ul><!-- Ul end -->
-                     </div><!-- header right end -->
-                 </div><!-- logo area end -->
-
-             </div><!-- Row end -->
-         </div><!-- Container end -->
-     </div>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div> -->
 
      <div class="site-navigation">
          <div class="container">
